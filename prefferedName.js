@@ -1,4 +1,3 @@
-
 var preferredName = function(FirstName, LastName) {
     if (FirstName && !LastName) {
 		return FirstName
@@ -9,4 +8,3 @@ var preferredName = function(FirstName, LastName) {
 	else { return false};
 
 	}
-
