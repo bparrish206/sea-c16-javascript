@@ -4,14 +4,14 @@ var Person = function(name, parentName, age) {
 	this.age = age; 
 	this.isAlive = function() { 
 		if (age > 0 && age <= 150) { 
- 			return "Is alive" 
+ 			return true;
  			} 
-		else { return "Is dead"} 
-  			} 
+		else { return false} 
+  	} 
  	this.isDead = function() { 
   		if (!age) { 
- 			return "Is dead" 
+ 			return true; 
  		} 
-  		else {return this.isAlive()} 
-  		} 
-
+      else {return false}
+  	};
+}
