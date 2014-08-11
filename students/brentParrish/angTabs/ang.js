@@ -6,12 +6,12 @@ function NgTabsCtrl($scope, $http) {
   $scope.showTab = function(tab){
     $scope.activeTab = tab;
   };
+
   function onTabsFetched(tabs){
     $scope.tabs = tabs;
     $scope.activeTab = $scope.tabs[0];
   }
 }
-
 function newTabs($scope){
   $scope.kitten = "http://placekitten.com/g"; 
   $scope.kennel = ["Small", "Medium","Husky","Large"];
