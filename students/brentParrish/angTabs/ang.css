@@ -55,11 +55,13 @@ button {
   padding:5px;
   background-color: blue;
   color:yellow;
+  border-radius: 5px;
 }
 
 button:hover {
   background-color:gold;
   color:green;
+  border-radius: 5px;
 }
 
 .hide {

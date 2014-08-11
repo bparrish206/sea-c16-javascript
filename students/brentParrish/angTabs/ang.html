@@ -2,12 +2,10 @@
     <head>
 <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
-
       <script src="ngTabs.js"></script>
       <script src='newTabs.js'></script>
     </head>
     <body>
-
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">Angular Tabs</h1>
@@ -23,22 +21,18 @@
         </div>
       </div>
     </div>
-       
         </div>
             <div class="main wrapper clearfix">
                 <article>
                     <header>
                         <h1>Tabs are nice, but the world needs more Kittens</h1>
                     </header>
-     <div ng-controller="newTabs">         
-       <img src="http://placekitten.com/g/200/300" ng-show="catsRule"/>
- 
-                  <button type='button' ng-repeat="i in kennel" ng-click="catsRule = !catsRule" /> Kitten </button>
-          
-                  </div>
-          </div>
-                  
-            </div> 
+     <div ng-controller="newTabs">         <img src="{{kitten}}/200/300" ng-show="catsRule"/>
+       <button type='button' ng-click="catsRule = !catsRule">More Kats Please</button>
+                  <button type='button' ng-repeat="i in kennel" ng-show="catsRule"> {{i}} </button>
+   <img src="{{kitten}}/200/200" ng-show="catsRule"/>    <img src="{{kitten}}/300/300" Ng-show="counter" />    <img src="{{kitten}}/400/400" ng-show="catsRule"/>
+    <img src="{{kitten}}/500/500" ng-show="catsRule"/>
+        </div> 
         </div> 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
